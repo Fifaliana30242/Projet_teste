@@ -1,0 +1,210 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* STYLE GENERAL */
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    text-align: center; 
+
+}
+
+.logo{
+    margin-top: 50px;
+    position: absolute;
+    left: 60px;
+    top: 10%;
+    transform: translateY(-50%);
+    width: 120px; 
+    height: auto;
+    border-radius: 50px;
+}
+
+
+/* HEADER */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(24, 23, 23);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav{
+    margin-top: 10px;
+}
+
+nav a{
+    background-color: #e91e63;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+nav a:hover{
+    background-color: white;
+    color: darkred;
+}
+
+/* SECTIONS */
+section{
+    background-color: rgb(230, 213, 213);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+}
+
+h2{
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+    border-start-end-radius: calc(1,2,3);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+mark{
+    color: rgb(171, 216, 185);
+    background: rgb(165, 181, 196);
+    width: 100%;
+}
+h3{
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: rgb(33, 240, 240);
+    background-color: aliceblue;
+}
+#presentation{
+    margin-top: 100px;
+    height: 100%;
+    display: block;
+    text-align: center;
+    font-size: large;
+    mask-composite: revert-layer;
+    color: cadetblue;
+    
+}
+
+/* IMAGES */
+#galerie{
+    display: flex;                   
+    flex-wrap: wrap;               
+    justify-content: center;      
+    gap: 15px;                     
+}
+
+#galerie img{
+    width: 220px;                   
+    height: 160px;                  
+    object-fit: cover;               
+    border-radius: 12px;           
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;       
+    cursor: pointer;                
+}
+
+#galerie img:hover{
+    transform: scale(1.08);          
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    filter: brightness(1.1);         
+}
+/* carte image */
+figure{
+    width:300px;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+/* animation image */
+figure:hover{
+    transform:translateY(-5px);
+}
+
+/* image galerie */
+figure img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+/* description image */
+figcaption{
+    padding:15px;
+    text-align:center;
+    font-size:15px;
+}
+
+main{
+    width:100%;
+    max-width:1200px;  
+    margin:30px auto;
+    padding:25px;
+    text-align:center;
+}
+
+#horaires{
+    width: 97%;
+    max-width:1200px;
+    margin: 30px auto;
+    padding:25px;
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 0 10px #ddd;
+    font-family:Arial;
+}
+
+#horaires h2,
+.intro,
+.note{
+    text-align:left;
+}
+
+#horaires h2{
+    color:#e91e63;
+}
+
+#horaires ul{
+    list-style:none;
+    padding:0;
+}
+
+#horaires li{
+    display:flex;
+    justify-content:space-between;
+    margin:8px 0;
+    padding:10px;
+    background:#f5f5f5;
+    border-radius:8px;
+}
+
+#horaires li:hover{
+    background:#ffe4ec;
+}
+
+.ferme{
+    color:red;
+}
+
+footer{
+    text-decoration: aqua;
+    background-color: rgb(49, 41, 41);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
